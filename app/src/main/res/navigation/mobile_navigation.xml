@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_calculator"
+        android:name="com.example.wattup.ui.calculator.CalculatorFragment"
+        android:label="@string/title_calculator"
+        tools:layout="@layout/fragment_calculator" />
+
+    <fragment
+        android:id="@+id/navigation_calculator_result"
+        android:name="com.example.wattup.ui.calculator.calculatorresult.CalculatorResultFragment"
+        android:label="@string/title_calculator"
+        tools:layout="@layout/fragment_calculator_result" />
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.wattup.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.wattup.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_tips"
+        android:name="com.example.wattup.ui.tips.TipsFragment"
+        android:label="@string/title_Tips_blog"
+        tools:layout="@layout/fragment_tips" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.wattup.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_starter"
+        android:name="com.example.wattup.ui.start.StartFragment"
+        android:label="start"
+        tools:layout="@layout/fragment_start" />
+    <fragment
+        android:id="@+id/navigation_starter2"
+        android:name="com.example.wattup.ui.start.start2.StartSecondFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_start_second" />
+
+    <fragment
+        android:id="@+id/navigation_register"
+        android:name="com.example.wattup.ui.register.RegisterFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_register" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard_turn_off"
+        android:name="com.example.wattup.ui.dashboard.dashboardcalender.DashboardCalenderFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_dashboard_calender" />
+</navigation>

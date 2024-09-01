@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">wattUp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_calculator">Calculator</string>
+    <string name="title_Tips_blog">Tips/Blog</string>
+    <string name="title_profile">Profile</string>
+    <string name="home_welcome">Welcome!</string>
+    <string name="welcome_desc">Checking your energy levels and
+        consumptions in your personal life.</string>
+    <string name="start_page_desc">Find out what\'s preventing you from being an energy-saving superhero by taking this entertaining quiz! Simply check the responses that most accurately represent your routines to identify your energy-saving obstacles.</string>
+    <string name="or">OR</string>
+    <string name="try_now_and_see">Try now and see the best results in just 21 days!</string>
+    <string name="hey_name">Hey Name,</string>
+    <string name="username">name</string>
+    <string name="take_photo">Take Photo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

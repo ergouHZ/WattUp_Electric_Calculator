@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.register.RegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/branding" />
+
+        <TextView
+            android:id="@+id/tv_signup_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Create a free account to discover your personalized learning path"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/et_username_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Username"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="32dp">
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/screen_background_light"
+                android:drawableStart="@drawable/profile_co_present_24"
+                android:drawablePadding="10dp"
+                android:hint="youthPulse@gmail.com"
+                android:inputType="textEmailAddress"
+                android:padding="10dp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/et_password_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Password"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="32dp">
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/screen_background_light"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="10dp"
+                android:hint="******"
+                android:inputType="textPassword"
+                android:padding="10dp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/et_contact_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Contact Number"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="32dp">
+
+            <EditText
+                android:id="@+id/et_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/screen_background_light"
+                android:drawableStart="@drawable/baseline_phone_24"
+                android:drawablePadding="10dp"
+                android:hint="000 0000 0000"
+                android:inputType="phone"
+                android:padding="10dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <CheckBox
+            android:id="@+id/cb_whatsapp_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Would you like to get notification on WhatsApp"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/materialCardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    app:cardCornerRadius="8dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="2dp"
+                    tools:cardCornerRadius="32dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_signin_apple"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="#00FFFFFF"
+                        android:contentDescription="Sign in with Apple"
+                        android:padding="12dp"
+                        android:paddingRight="3dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/apple" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/materialCardView_google"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    app:cardCornerRadius="8dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="2dp"
+                    tools:cardCornerRadius="32dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_signin_google"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="#00FFFFFF"
+                        android:contentDescription="Sign in with Google"
+                        android:padding="12dp"
+                        android:paddingRight="3dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/google" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/materialCardView_fb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    app:cardCornerRadius="8dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="2dp"
+                    tools:cardCornerRadius="32dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_signin_facebook"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="#00FFFFFF"
+                        android:contentDescription="Sign in with Facebook"
+                        android:padding="12dp"
+                        android:paddingRight="3dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/facebook" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_create_account"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/button_dark_orange"
+            android:text="Create account"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</FrameLayout>
